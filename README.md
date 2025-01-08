@@ -1,6 +1,6 @@
-# SCL-ReID
+# SCM-ReID
 
-Code Repo for SCL-ReID method.
+Code Repo for SCM-ReID method.
 
 The codes are expanded on a [[centroids]](https://github.com/mikwieczorek/centroids-reid) and [[SupCon]](https://github.com/HobbitLong/SupContrast).
 
@@ -9,8 +9,8 @@ The codes are expanded on a [[centroids]](https://github.com/mikwieczorek/centro
 The whole model is implemented in PyTorch-Lightning framework.
 
 1. `cd` to a directory where you want to clone this repo
-2. Run `git clone https://github.com/dangph258/scl-reid.git`
-3. Install conda enviroment `conda env create -f scl-reid.yml`
+2. Run `git clone https://github.com/dangph258/scm-reid.git`
+3. Install conda enviroment `conda env create -f scm-reid.yml`
 4. Download pre-trained weights into `models/` directory for:
     - Resnet50 from here: [[link]](https://download.pytorch.org/models/resnet50-19c8e357.pth)
 5. Prepare datasets:
@@ -44,7 +44,7 @@ The whole model is implemented in PyTorch-Lightning framework.
 Each Dataset and Model has its own train script.  
 All train scripts are in `train_scirpts` folder with corresponding dataset name.
 
-Example run command to train SCL-ReID on market1501
+Example run command to train SCM-ReID on market1501
 ```bash
 CUDA_VISIBLE_DEVICES=0 ./train_scripts/market1501/md_train_ctl_model_s_r50_market1501.sh
 ```
