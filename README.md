@@ -2,7 +2,7 @@
 
 Code Repo for SCM-ReID method.
 
-The codes are expanded on a [[centroids]](https://github.com/mikwieczorek/centroids-reid) and [[SupCon]](https://github.com/HobbitLong/SupContrast).
+The implementation is extended based on on a [[centroids]](https://github.com/mikwieczorek/centroids-reid) and [[SupCon]](https://github.com/HobbitLong/SupContrast).
 
 ## Get Started
 
@@ -56,7 +56,7 @@ To test the trained model you can use provided scripts in `train_scripts`, just 
     TEST.ONLY_TEST True \  
     MODEL.PRETRAIN_PATH "path/to/pretrained/model/checkpoint.pth"
     
-Example train script for testing trained SCL-ReID on Market1501
+Example train script for testing trained SCM-ReID on Market1501
 ```bash
 python train_ctl_model.py \
 --config_file="configs/256_resnet50.yml" \
